@@ -18,7 +18,7 @@ const Sidebar = () => {
         <div className="relative w-64 min-h-screen p-6 shadow-lg">
             <div
                 className="absolute inset-0 bg-no-repeat bg-bottom -ml-16"
-                style={{ backgroundImage: "url('/images/sidebar-bg.png')", backgroundSize: "200px 400px" }}
+                style={{ backgroundImage: "url('/images/sidebar-bg.png')", backgroundSize: "250px 700px" }}
             ></div>
             <div className="relative z-10">
                 <div className="mb-8 flex items-center">
