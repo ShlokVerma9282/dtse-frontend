@@ -1,4 +1,4 @@
-import Dashboard from "@/screens/DashBoard";
+import Dashboard from "@/screens/Dashboard";
 
 
 export default function Home() {
