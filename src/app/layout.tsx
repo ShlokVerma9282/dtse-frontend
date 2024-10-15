@@ -32,8 +32,8 @@ export default function RootLayout({
       >
         <Providers>
           <div className="flex">
-            <Sidebar /> {/* Sidebar will be rendered on all pages */}
-            <main className="flex-1 p-6">{children}</main>
+            <Sidebar />
+            <main className="flex-1">{children}</main>
           </div>
         </Providers>
       </body>
