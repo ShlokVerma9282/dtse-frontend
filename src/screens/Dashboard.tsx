@@ -1,5 +1,7 @@
 import FiberCard from "@/components/FiberCard";
 import Header from "@/components/Header";
+import Procurement from "@/components/Procurement";
+import VendorPerformance from "@/components/VendorPerformance";
 
 export default function Dashboard() {
 
@@ -56,6 +58,10 @@ export default function Dashboard() {
                         timeFrame={card.timeFrame}
                     />
                 ))}
+            </div>
+            <div className="grid grid-cols-2 w-full gap-4">
+                <Procurement />
+                <VendorPerformance />
             </div>
         </div>
     );
