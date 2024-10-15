@@ -59,12 +59,10 @@ export default function Dashboard() {
                     />
                 ))}
             </div>
-            <div className="flex flex-row w-full gap-6">
-            <Procurement />
-            <VendorPerformance />
-
+            <div className="grid grid-cols-2 w-full gap-4">
+                <Procurement />
+                <VendorPerformance />
             </div>
-            
         </div>
     );
 }
