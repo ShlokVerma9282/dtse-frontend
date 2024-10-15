@@ -1,5 +1,7 @@
 import FiberCard from "@/components/FiberCard";
 import Header from "@/components/Header";
+import Procurement from "@/components/Procurement";
+import VendorPerformance from "@/components/VendorPerformance";
 
 export default function Dashboard() {
 
@@ -57,6 +59,12 @@ export default function Dashboard() {
                     />
                 ))}
             </div>
+            <div className="flex flex-row w-full gap-6">
+            <Procurement />
+            <VendorPerformance />
+
+            </div>
+            
         </div>
     );
 }
