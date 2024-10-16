@@ -1,15 +1,25 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { Order, setSelectedOrder, showOrderDetailsScreen } from '@/store/orderSlice';
+import { procurementData } from '@/data';
 
 export default function Procurement() {
+  const dispatch = useDispatch();
 
-  const procurementData = [
-    { invoiceName: 'M23456145', date: '2024-09-04', amount: '130.8,12 €' },
-    { invoiceName: 'M23456146', date: '2024-09-05', amount: '150.5,00 €' },
-    { invoiceName: 'M23456147', date: '2024-09-06', amount: '200.0,50 €' },
-    { invoiceName: 'M23456148', date: '2024-09-07', amount: '99.9,99 €' },
-    { invoiceName: 'M23456149', date: '2024-09-08', amount: '185.7,23 €' },
-    { invoiceName: 'M23456150', date: '2024-09-09', amount: '75.8,70 €' },
-  ];
+  const formatDate = (dateString: string) => {
+    const [datePart] = dateString.split(' at ');
+    const date = new Date(datePart);
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: '2-digit',
+    }).replace(/,/g, '');
+  };
+
+  const handleViewOrderDetails = (order: Order) => {
+    dispatch(setSelectedOrder(order));
+    dispatch(showOrderDetailsScreen(true));
+  }
 
   return (
     <div className="py-6 w-full">
@@ -51,15 +61,18 @@ export default function Procurement() {
                       <hr className="h-px border-[#FF4FA7] border-[0.95px]" />
                     </td>
                   </tr>
-                  <tr className="flex w-full h-[53.36px] hover:bg-gray-100">
+                  <tr
+                    className="flex w-full h-[53.36px] hover:bg-gray-100 cursor-pointer"
+                    onClick={() => handleViewOrderDetails(data)} // Call function when clicked
+                  >
                     <td className="w-[157px] text-left p-4 text-[15.24px] leading-[22.87px]">
-                      {data.invoiceName}
+                      {data.orderInfo.invoiceName}
                     </td>
                     <td className="w-[157px] text-right p-4 text-[13.34px] leading-[20.96px]">
-                      {data.date}
+                      {formatDate(data.orderInfo.date)}
                     </td>
                     <td className="w-[157px] text-right p-4 text-[13.34px] leading-[20.96px] font-bold">
-                      {data.amount}
+                      {data.orderInfo.amount}
                     </td>
                     <td className="w-[110px] flex justify-center p-4">
                       <img src="/images/icons/CaretRight.png" alt="caret right" className='w-4 h-4' />
