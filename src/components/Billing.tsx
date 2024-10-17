@@ -13,7 +13,7 @@ export default function VendorPerformance() {
       {/* Claim Settlement */}
       <div className="flex flex-row justify-between bg-white rounded-lg h-[89.82px]">
         <div className="flex flex-col p-4 gap-2">
-          <div className="flex justify-center items-center rounded-2xl bg-[#FF4FA7] w-[63.58px] h-[28.74px]">
+          <div className="flex px-2 items-center rounded-2xl bg-[#FF4FA7] w-[63.58px] h-[28.74px] gap-1">
             <img
               className="w-[12px] h-[12px]"
               src="/images/icons/arrowUp.png"
@@ -36,13 +36,13 @@ export default function VendorPerformance() {
       {/* Amount Paid */}
       <div className="flex flex-row justify-between bg-white rounded-lg h-[89.82px]">
         <div className="flex flex-col p-4 gap-2">
-          <div className="flex justify-center items-center rounded-2xl bg-[#FF4FA7] w-[63.58px] h-[28.74px]">
+          <div className="flex px-2 items-center rounded-2xl bg-[#FF4FA7] w-[63.58px] h-[28.74px] gap-1">
             <img
-              className="w-[12px] h-[12px]"
+              className="w-[9.5px] h-[9.5px]"
               src="/images/icons/arrowDown.png"
             />
             <h1 className="font-medium text-[12px] leading-5 text-white">
-              10%
+              6%
             </h1>
           </div>
           <div>
