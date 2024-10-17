@@ -1,3 +1,4 @@
+import Billing from "@/components/Billing";
 import Chart from "@/components/Chart";
 import FiberCard from "@/components/FiberCard";
 import Header from "@/components/Header";
@@ -66,6 +67,7 @@ export default function Dashboard() {
                 <div>
                     <h1 className="text-2xl font-bold mb-4">Billing and Invoices</h1>
                     {/* Billing and Invoices code component */}
+                    <Billing/>
                 </div>
                 <div>
                     <h1 className="text-2xl font-bold mb-4">Technical Team</h1>
