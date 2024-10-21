@@ -17,7 +17,7 @@ const data = [
 const OrderDetails = () => {
 
     const dispatch = useDispatch();
-    const selectedOrder = useSelector((state: RootState) => state.orders.selectedOrder); // Get selected order from Redux state
+    const selectedOrder = useSelector((state: RootState) => state.orders.selectedOrder);
 
     const handleCloseOrderDetails = () => {
         dispatch(showOrderDetailsScreen(false));
@@ -27,7 +27,6 @@ const OrderDetails = () => {
         orderInfo = {
             invoiceName: "",
             date: "",
-            amount: "",
             orderType: "",
             quantity: 0,
             weight: "",
@@ -42,9 +41,20 @@ const OrderDetails = () => {
             paymentStatus: "",
             paymentStatusColor: "",
         },
+        orderHistoryInfo = { 
+            step1: "",
+            step2: "",
+            step3: "",
+            step4: "",
+            step5: "",
+            step6: "",
+            orderStatus: "",
+            orderStatusColor: "",
+        },
         labels = {
             order: ["Order ID", "Order Type", "Quantity", "Weight", "Cost"],
             shipping: ["Ship To", "Customer Name", "Contact", "Mail ID", "Payment Status"],
+            history: ["Order Status"],
         },
     } = selectedOrder || {};
 
@@ -97,7 +107,8 @@ const OrderDetails = () => {
                             <p className='text-[#909090]'>{shippingInfo.customerName}</p>
                             <p className='text-[#909090]'>{shippingInfo.contact}</p>
                             <p className='text-[#909090]'>{shippingInfo.mailId}</p>
-                            <p className={shippingInfo.paymentStatusColor}>{shippingInfo.paymentStatus}</p>
+                            <p className={`font-bold ${shippingInfo.paymentStatusColor === 'green' ? 'text-green-500' : 'text-orange-500'}`}>
+                            {shippingInfo.paymentStatus}</p>
                         </div>
                     </div>
                 </div>
