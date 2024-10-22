@@ -6,42 +6,48 @@ const data = [
     name: "Order Generated",
     status: true,
     description: "",
-    icon: "/images/orderIcons/stepOne.png",
+    greenIcon: "/images/orderIcons/greenStepOne.png",
+    redIcon: "/images/orderIcons/redStepOne.png",
   },
   {
     step: 2,
     name: "Procurement Team",
     status: true,
     description: "",
-    icon: "/images/orderIcons/stepTwo.png",
+    greenIcon: "/images/orderIcons/greenStepTwo.png",
+    redIcon: "/images/orderIcons/redStepTwo.png",
   },
   {
     step: 3,
     name: "Vendor",
     status: true,
     description: "",
-    icon: "/images/orderIcons/stepThree.png",
+    greenIcon: "/images/orderIcons/greenStepThree.png",
+    redIcon: "/images/orderIcons/redStepThree.png",
   },
   {
     step: 4,
     name: "Technical Team",
     status: false,
     description: "",
-    icon: "/images/orderIcons/stepFour.png",
+    greenIcon: "/images/orderIcons/greenStepFour.png",
+    redIcon: "/images/orderIcons/redStepFour.png",
   },
   {
     step: 5,
     name: "Payment",
     status: false,
     description: "",
-    icon: "/images/orderIcons/stepFive.png",
+    greenIcon: "/images/orderIcons/greenStepFive.png",
+    redIcon: "/images/orderIcons/redStepFive.png",
   },
   {
     step: 6,
     name: "Delivered",
     status: false,
     description: "",
-    icon: "/images/orderIcons/stepSix.png",
+    greenIcon: "/images/orderIcons/greenStepSix.png",
+    redIcon: "/images/orderIcons/redStepSix.png",
   },
 ];
 
@@ -60,7 +66,7 @@ const OrderHistory = () => {
                 )}
                 <div>
                   <div className={`flex justify-center items-center w-[109px] h-[109px] rounded-full border-[4px] ${data.status ? "border-[#529544] bg-[#DFFBD9]": "border-[#FF0000] bg-[#FFFAFA]"}`}>
-                    <img src={data.icon} />
+                    <img src={`${data.status ? data.greenIcon : data.redIcon}`} />
                   </div>
                 </div>
               </div>
