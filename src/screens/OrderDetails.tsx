@@ -1,10 +1,21 @@
 import SearchBar from '@/components/SearchBar';
-import React from 'react';
+import React, {useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { showOrderDetailsScreen } from '@/store/orderSlice';
 import { RootState } from '@/store';
+import OrderHistory from '@/components/OrderHistory';
+
+const data = [
+    { step: 1, name: '', status: true, description:"" },
+    { step: 2, name: '', status: true, description:"" },
+    { step: 3, name: '', status: true, description:"" },
+    { step: 4, name: '', status: true, description:"" },
+    { step: 5, name: '', status: true, description:"" },
+    { step: 6, name: '', status: true, description:"" }
+];
 
 const OrderDetails = () => {
+
     const dispatch = useDispatch();
     const selectedOrder = useSelector((state: RootState) => state.orders.selectedOrder);
 
@@ -46,6 +57,7 @@ const OrderDetails = () => {
             history: ["Order Status"],
         },
     } = selectedOrder || {};
+
 
     return (
         <div className="flex min-h-screen">
@@ -100,13 +112,10 @@ const OrderDetails = () => {
                         </div>
                     </div>
                 </div>
-                <p><strong>{labels.history[0]}:</strong> 
-                <span className={`font-bold ${orderHistoryInfo.orderStatusColor === 'green' ? 'text-green-500' : 'text-red-500'}`}>
-                {orderHistoryInfo.orderStatus}
-                </span></p>
 
-               
+                <OrderHistory/>
             </div>
+            
         </div>
     );
 };
