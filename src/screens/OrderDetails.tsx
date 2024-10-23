@@ -1,5 +1,5 @@
 import SearchBar from '@/components/SearchBar';
-import React, {useState} from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { showOrderDetailsScreen } from '@/store/orderSlice';
 import { RootState } from '@/store';
@@ -84,19 +84,18 @@ const OrderDetails = () => {
                         </div>
                         <div>
                             <p className="text-gray-600">{shippingInfo.address}</p>
-                            <p className="text-sm text-gray-500 mb-8">{shippingInfo.deliveryDate}</p>
+                            <p className="text-sm text-gray-500 mb-4">{shippingInfo.deliveryDate}</p>
                             <p className='text-[#909090]'>{shippingInfo.customerName}</p>
                             <p className='text-[#909090]'>{shippingInfo.contact}</p>
                             <p className='text-[#909090]'>{shippingInfo.mailId}</p>
                             <p className={`font-bold ${shippingInfo.paymentStatusColor === 'green' ? 'text-green-500' : 'text-orange-500'}`}>
-                            {shippingInfo.paymentStatus}</p>
+                                {shippingInfo.paymentStatus}</p>
                         </div>
                     </div>
                 </div>
 
-                <OrderHistory/>
+                <OrderHistory />
             </div>
-            
         </div>
     );
 };

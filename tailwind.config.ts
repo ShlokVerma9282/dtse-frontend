@@ -13,6 +13,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        barlow: ["Barlow", "sans-serif"],
+      },
     },
   },
   plugins: [],
