@@ -66,14 +66,14 @@ const OrderDetails = () => {
                         </div>
                         <div>
                             <div className="h-8"></div>
-                            <div className="h-8 mb-8"></div>
+                            <div className="h-8 mb-4"></div>
                             <p className='text-[#909090]'>{orderInfo.orderType}</p>
                             <p className='text-[#909090]'>{orderInfo.quantity}</p>
                             <p className='text-[#909090]'>{orderInfo.weight}</p>
                             <p className='text-[#909090]'>{orderInfo.cost}</p>
                         </div>
                         <div>
-                            <p><strong>{labels.shipping[0]}</strong></p>
+                            <p><strong className='ml-[2.5rem]'>{labels.shipping[0]}</strong></p>
                             <div className="h-8 mb-8"></div>
                             <div className="border-l-2 border-gray-400 pl-10">
                                 <p><strong>{labels.shipping[1]}</strong></p>
