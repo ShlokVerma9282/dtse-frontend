@@ -7,9 +7,17 @@ const OrderHistory = () => {
   const steps = selectedOrder?.orderHistoryInfo?.steps || [];
   const orderID = selectedOrder?.orderInfo?.invoiceName;
   const orderDate = selectedOrder?.orderInfo?.date;
+  const isDelayed = steps.some(step => !step.status);
+  const overallStatus = isDelayed ? "Delayed" : "On Track";
+
   return (
     <div className="font-barlow">
-      <h2 className="text-xl font-bold mb-4 mt-4">Order History -</h2>
+      <h2 className="text-xl font-bold mb-4 mt-4">
+        Order History -
+        <span className={isDelayed ? "text-red-600" : "text-green-600"}>
+          {overallStatus}
+        </span>
+      </h2>
       <div className="flex flex-row ml-[89px]">
         {steps.map((data, index) => (
           <div className="flex flex-col" key={index}>
@@ -18,7 +26,7 @@ const OrderHistory = () => {
                 {index != 0 && (
                   <div className={`${data.status ? "bg-[#529544]" : "bg-[#FF0000]"} h-[5px] w-[69px]`}></div>
                 )}
-                <div className="absolute top-[120%] left-1/2 transform -translate-x-1/2 px-4 py-3 w-[440px] text-sm text-black bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                <div className="absolute top-[180%] left-1/2 transform -translate-x-1/2 px-4 py-3 w-[440px] text-sm text-black bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                   <div className="absolute -top-[10px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[10px] border-b-white"></div>
                   <p className="text-sm">
                     The Order ID: <span className="font-bold">{orderID}</span> is {data.status ?
