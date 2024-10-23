@@ -15,7 +15,7 @@ const Sidebar = () => {
     ];
 
     return (
-        <div className="relative w-64 min-h-screen p-6 shadow-lg">
+        <div className="relative w-64 min-h-screen p-6 shadow-lg font-barlow">
             <div
                 className="absolute inset-0 bg-no-repeat bg-bottom -ml-16"
                 style={{ backgroundImage: "url('/images/sidebar-bg.png')", backgroundSize: "250px 450px" }}

@@ -8,7 +8,7 @@ const OrderHistory = () => {
   const orderID = selectedOrder?.orderInfo?.invoiceName;
   const orderDate = selectedOrder?.orderInfo?.date;
   return (
-    <div>
+    <div className="font-barlow">
       <h2 className="text-xl font-bold mb-4 mt-4">Order History -</h2>
       <div className="flex flex-row ml-[89px]">
         {steps.map((data, index) => (
@@ -41,7 +41,7 @@ const OrderHistory = () => {
 
       <div className="flex flex-row ml-[47px] justify-center mt-4 absolute">
         {steps.map((data, index) => (
-          <div className="w-[140px] justify-center items-center flex text-[12px]" key={index}>
+          <div className="w-[140px] justify-center items-center flex text-[14px] font-semibold" key={index}>
             {data.name}
           </div>
         ))}

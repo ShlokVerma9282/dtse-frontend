@@ -41,7 +41,7 @@ const OrderDetails = () => {
 
 
     return (
-        <div className="flex min-h-screen">
+        <div className="flex min-h-screen font-barlow">
             <div className="flex-1 p-8 bg-gray-100">
                 <div className="mb-8 flex justify-between">
                     <SearchBar />

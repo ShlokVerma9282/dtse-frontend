@@ -23,12 +23,12 @@ const Header = () => {
             53
           </span>
         </button>
-        <button className="relative p-2 rounded-lg bg-[#FBD9EA]">
-          <Cog8ToothIcon className="h-6 w-6 text-[#E20074]" />
+        <button className="relative p-2 rounded-lg bg-[#79797926]">
+          <Cog8ToothIcon className="h-6 w-6 text-[#454545]" />
         </button>
         <div className="border-l-2 border-l-[#D0D6DE] h-8 "></div>
         <div className="flex items-center space-x-2">
-          <span className="font-medium">Hello, Thomas</span>
+          <span>Hello, <span className="font-medium">Thomas</span></span>
           <img
             src="/images/user-profile.png"
             alt="Profile"
