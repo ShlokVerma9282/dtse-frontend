@@ -5,14 +5,6 @@ import { showOrderDetailsScreen } from '@/store/orderSlice';
 import { RootState } from '@/store';
 import OrderHistory from '@/components/OrderHistory';
 
-const data = [
-    { step: 1, name: '', status: true, description:"" },
-    { step: 2, name: '', status: true, description:"" },
-    { step: 3, name: '', status: true, description:"" },
-    { step: 4, name: '', status: true, description:"" },
-    { step: 5, name: '', status: true, description:"" },
-    { step: 6, name: '', status: true, description:"" }
-];
 
 const OrderDetails = () => {
 
@@ -41,20 +33,9 @@ const OrderDetails = () => {
             paymentStatus: "",
             paymentStatusColor: "",
         },
-        orderHistoryInfo = { 
-            step1: "",
-            step2: "",
-            step3: "",
-            step4: "",
-            step5: "",
-            step6: "",
-            orderStatus: "",
-            orderStatusColor: "",
-        },
         labels = {
             order: ["Order ID", "Order Type", "Quantity", "Weight", "Cost"],
             shipping: ["Ship To", "Customer Name", "Contact", "Mail ID", "Payment Status"],
-            history: ["Order Status"],
         },
     } = selectedOrder || {};
 

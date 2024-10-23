@@ -19,19 +19,69 @@
         "paymentStatusColor": "green"
       },
       "orderHistoryInfo": {
-        "step1": "On Track",
-        "step2": "On Track",
-        "step3": "On Track",
-        "step4": "On Track",
-        "step5": "On Track",
-        "step6": "On Track",
         "orderStatus": "On Track",
-        "orderStatusColor": "green"
+        "orderStatusColor": "green",
+        "steps": [
+          {
+            "step": 1,
+            "name": "Order Generated",
+            "status": true,
+            "description": "Your order has been successfully generated.",
+            "greenIcon": "/images/orderIcons/greenStepOne.png",
+            "redIcon": "/images/orderIcons/redStepOne.png"
+          },
+          {
+            "step": 2,
+            "name": "Procurement Team",
+            "status": true,
+            "description": "The procurement team is sourcing the required materials.",
+            "greenIcon": "/images/orderIcons/greenStepTwo.png",
+            "redIcon": "/images/orderIcons/redStepTwo.png"
+          },
+          {
+            "step": 3,
+            "name": "Vendor",
+            "status": true,
+            "description": "Vendor has confirmed material availability.",
+            "greenIcon": "/images/orderIcons/greenStepThree.png",
+            "redIcon": "/images/orderIcons/redStepThree.png"
+          },
+          {
+            "step": 4,
+            "name": "Technical Team",
+            "status": true,
+            "description": "The technical team is preparing for the installation.",
+            "greenIcon": "/images/orderIcons/greenStepFour.png",
+            "redIcon": "/images/orderIcons/redStepFour.png"
+          },
+          {
+            "step": 5,
+            "name": "Payment",
+            "status": true,
+            "description": "Payment has been processed successfully.",
+            "greenIcon": "/images/orderIcons/greenStepFive.png",
+            "redIcon": "/images/orderIcons/redStepFive.png"
+          },
+          {
+            "step": 6,
+            "name": "Delivered",
+            "status": true,
+            "description": "Your order has been successfully delivered.",
+            "greenIcon": "/images/orderIcons/greenStepSix.png",
+            "redIcon": "/images/orderIcons/redStepSix.png"
+          }
+        ]
       },
       "labels": {
         "order": ["Order ID", "Order Type", "Quantity", "Weight", "Cost"],
         "shipping": ["Ship To", "Customer Name", "Contact", "Mail ID", "Payment Status"],
-        "history": ["Order History"]
+        "history": {
+          "orderHistory": "Order History",
+          "step": "Step",
+          "name": "Name",
+          "status": "Status",
+          "description": "Description"
+        }
       }
     },
     {
@@ -53,19 +103,69 @@
         "paymentStatusColor": "orange"
       },
       "orderHistoryInfo": {
-        "step1": "On Track",
-        "step2": "On Track",
-        "step3": "Delayed",
-        "step4": "Delayed",
-        "step5": "Delayed",
-        "step6": "Delayed",
         "orderStatus": "Delayed",
-        "orderStatusColor": "red"
+        "orderStatusColor": "red",
+        "steps": [
+          {
+            "step": 1,
+            "name": "Order Generated",
+            "status": true,
+            "description": "Your order has been successfully generated.",
+            "greenIcon": "/images/orderIcons/greenStepOne.png",
+            "redIcon": "/images/orderIcons/redStepOne.png"
+          },
+          {
+            "step": 2,
+            "name": "Procurement Team",
+            "status": true,
+            "description": "Materials are being procured.",
+            "greenIcon": "/images/orderIcons/greenStepTwo.png",
+            "redIcon": "/images/orderIcons/redStepTwo.png"
+          },
+          {
+            "step": 3,
+            "name": "Vendor",
+            "status": false,
+            "description": "Vendor has not confirmed material availability.",
+            "greenIcon": "/images/orderIcons/greenStepThree.png",
+            "redIcon": "/images/orderIcons/redStepThree.png"
+          },
+          {
+            "step": 4,
+            "name": "Technical Team",
+            "status": false,
+            "description": "Technical team assignment is pending due to staffing issues.",
+            "greenIcon": "/images/orderIcons/greenStepFour.png",
+            "redIcon": "/images/orderIcons/redStepFour.png"
+          },
+          {
+            "step": 5,
+            "name": "Payment",
+            "status": false,
+            "description": "Payment has not been completed yet.",
+            "greenIcon": "/images/orderIcons/greenStepFive.png",
+            "redIcon": "/images/orderIcons/redStepFive.png"
+          },
+          {
+            "step": 6,
+            "name": "Delivered",
+            "status": false,
+            "description": "Your order has not been delivered yet.",
+            "greenIcon": "/images/orderIcons/greenStepSix.png",
+            "redIcon": "/images/orderIcons/redStepSix.png"
+          }
+        ]
       },
       "labels": {
         "order": ["Order ID", "Order Type", "Quantity", "Weight", "Cost"],
         "shipping": ["Ship To", "Customer Name", "Contact", "Mail ID", "Payment Status"],
-        "history": ["Order History"]
+        "history": {
+          "orderHistory": "Order History",
+          "step": "Step",
+          "name": "Name",
+          "status": "Status",
+          "description": "Description"
+        }
       }
     },
     {
@@ -87,19 +187,69 @@
         "paymentStatusColor": "green"
       },
       "orderHistoryInfo": {
-        "step1": "On Track",
-        "step2": "On Track",
-        "step3": "On Track",
-        "step4": "Delayed",
-        "step5": "Delayed",
-        "step6": "Delayed",
         "orderStatus": "Delayed",
-        "orderStatusColor": "red"
+        "orderStatusColor": "red",
+        "steps": [
+          {
+            "step": 1,
+            "name": "Order Generated",
+            "status": true,
+            "description": "Your order has been successfully generated.",
+            "greenIcon": "/images/orderIcons/greenStepOne.png",
+            "redIcon": "/images/orderIcons/redStepOne.png"
+          },
+          {
+            "step": 2,
+            "name": "Procurement Team",
+            "status": true,
+            "description": "Materials are being procured.",
+            "greenIcon": "/images/orderIcons/greenStepTwo.png",
+            "redIcon": "/images/orderIcons/redStepTwo.png"
+          },
+          {
+            "step": 3,
+            "name": "Vendor",
+            "status": true,
+            "description": "Vendor has confirmed material availability.",
+            "greenIcon": "/images/orderIcons/greenStepThree.png",
+            "redIcon": "/images/orderIcons/redStepThree.png"
+          },
+          {
+            "step": 4,
+            "name": "Technical Team",
+            "status": false,
+            "description": "Technical team is unavailable due to scheduling conflicts.",
+            "greenIcon": "/images/orderIcons/greenStepFour.png",
+            "redIcon": "/images/orderIcons/redStepFour.png"
+          },
+          {
+            "step": 5,
+            "name": "Payment",
+            "status": false,
+            "description": "Payment has not been completed yet.",
+            "greenIcon": "/images/orderIcons/greenStepFive.png",
+            "redIcon": "/images/orderIcons/redStepFive.png"
+          },
+          {
+            "step": 6,
+            "name": "Delivered",
+            "status": false,
+            "description": "Your order has not been delivered yet.",
+            "greenIcon": "/images/orderIcons/greenStepSix.png",
+            "redIcon": "/images/orderIcons/redStepSix.png"
+          }
+        ]
       },
       "labels": {
         "order": ["Order ID", "Order Type", "Quantity", "Weight", "Cost"],
         "shipping": ["Ship To", "Customer Name", "Contact", "Mail ID", "Payment Status"],
-        "history": ["Order History"]
+        "history": {
+          "orderHistory": "Order History",
+          "step": "Step",
+          "name": "Name",
+          "status": "Status",
+          "description": "Description"
+        }
       }
     },
     {
@@ -121,19 +271,69 @@
         "paymentStatusColor": "green"
       },
       "orderHistoryInfo": {
-        "step1": "On Track",
-        "step2": "On Track",
-        "step3": "On Track",
-        "step4": "On Track",
-        "step5": "Delayed",
-        "step6": "Delayed",
         "orderStatus": "Delayed",
-        "orderStatusColor": "red"
+        "orderStatusColor": "red",
+        "steps": [
+          {
+            "step": 1,
+            "name": "Order Generated",
+            "status": true,
+            "description": "Your order has been successfully generated.",
+            "greenIcon": "/images/orderIcons/greenStepOne.png",
+            "redIcon": "/images/orderIcons/redStepOne.png"
+          },
+          {
+            "step": 2,
+            "name": "Procurement Team",
+            "status": true,
+            "description": "Materials are being procured.",
+            "greenIcon": "/images/orderIcons/greenStepTwo.png",
+            "redIcon": "/images/orderIcons/redStepTwo.png"
+          },
+          {
+            "step": 3,
+            "name": "Vendor",
+            "status": true,
+            "description": "Vendor has confirmed material availability.",
+            "greenIcon": "/images/orderIcons/greenStepThree.png",
+            "redIcon": "/images/orderIcons/redStepThree.png"
+          },
+          {
+            "step": 4,
+            "name": "Technical Team",
+            "status": true,
+            "description": "The technical team is preparing for the installation.",
+            "greenIcon": "/images/orderIcons/greenStepFour.png",
+            "redIcon": "/images/orderIcons/redStepFour.png"
+          },
+          {
+            "step": 5,
+            "name": "Payment",
+            "status": false,
+            "description": "Payment has not been completed yet.",
+            "greenIcon": "/images/orderIcons/greenStepFive.png",
+            "redIcon": "/images/orderIcons/redStepFive.png"
+          },
+          {
+            "step": 6,
+            "name": "Delivered",
+            "status": false,
+            "description": "Your order has not been delivered yet.",
+            "greenIcon": "/images/orderIcons/greenStepSix.png",
+            "redIcon": "/images/orderIcons/redStepSix.png"
+          }
+        ]
       },
       "labels": {
         "order": ["Order ID", "Order Type", "Quantity", "Weight", "Cost"],
         "shipping": ["Ship To", "Customer Name", "Contact", "Mail ID", "Payment Status"],
-        "history": ["Order History"]
+        "history": {
+          "orderHistory": "Order History",
+          "step": "Step",
+          "name": "Name",
+          "status": "Status",
+          "description": "Description"
+        }
       }
     },
     {
@@ -155,19 +355,69 @@
         "paymentStatusColor": "orange"
       },
       "orderHistoryInfo": {
-        "step1": "On Track",
-        "step2": "On Track",
-        "step3": "On Track",
-        "step4": "On Track",
-        "step5": "Delayed",
-        "step6": "Delayed",
         "orderStatus": "Delayed",
-        "orderStatusColor": "red"
+        "orderStatusColor": "red",
+        "steps": [
+          {
+            "step": 1,
+            "name": "Order Generated",
+            "status": true,
+            "description": "Your order has been successfully generated.",
+            "greenIcon": "/images/orderIcons/greenStepOne.png",
+            "redIcon": "/images/orderIcons/redStepOne.png"
+          },
+          {
+            "step": 2,
+            "name": "Procurement Team",
+            "status": true,
+            "description": "Materials are being procured.",
+            "greenIcon": "/images/orderIcons/greenStepTwo.png",
+            "redIcon": "/images/orderIcons/redStepTwo.png"
+          },
+          {
+            "step": 3,
+            "name": "Vendor",
+            "status": true,
+            "description": "Vendor has confirmed material availability.",
+            "greenIcon": "/images/orderIcons/greenStepThree.png",
+            "redIcon": "/images/orderIcons/redStepThree.png"
+          },
+          {
+            "step": 4,
+            "name": "Technical Team",
+            "status": false,
+            "description": "Technical team is awaiting final instructions.",
+            "greenIcon": "/images/orderIcons/greenStepFour.png",
+            "redIcon": "/images/orderIcons/redStepFour.png"
+          },
+          {
+            "step": 5,
+            "name": "Payment",
+            "status": false,
+            "description": "Payment has not been completed yet.",
+            "greenIcon": "/images/orderIcons/greenStepFive.png",
+            "redIcon": "/images/orderIcons/redStepFive.png"
+          },
+          {
+            "step": 6,
+            "name": "Delivered",
+            "status": false,
+            "description": "Your order has not been delivered yet.",
+            "greenIcon": "/images/orderIcons/greenStepSix.png",
+            "redIcon": "/images/orderIcons/redStepSix.png"
+          }
+        ]
       },
       "labels": {
         "order": ["Order ID", "Order Type", "Quantity", "Weight", "Cost"],
         "shipping": ["Ship To", "Customer Name", "Contact", "Mail ID", "Payment Status"],
-        "history": ["Order History"]
+        "history": {
+          "orderHistory": "Order History",
+          "step": "Step",
+          "name": "Name",
+          "status": "Status",
+          "description": "Description"
+        }
       }
     },
     {
@@ -189,19 +439,69 @@
         "paymentStatusColor": "green"
       },
       "orderHistoryInfo": {
-        "step1": "On Track",
-        "step2": "On Track",
-        "step3": "On Track",
-        "step4": "On Track",
-        "step5": "On Track",
-        "step6": "On Track",
         "orderStatus": "On Track",
-        "orderStatusColor": "green"
+        "orderStatusColor": "green",
+        "steps": [
+          {
+            "step": 1,
+            "name": "Order Generated",
+            "status": true,
+            "description": "Your order has been successfully generated.",
+            "greenIcon": "/images/orderIcons/greenStepOne.png",
+            "redIcon": "/images/orderIcons/redStepOne.png"
+          },
+          {
+            "step": 2,
+            "name": "Procurement Team",
+            "status": true,
+            "description": "Materials are being procured.",
+            "greenIcon": "/images/orderIcons/greenStepTwo.png",
+            "redIcon": "/images/orderIcons/redStepTwo.png"
+          },
+          {
+            "step": 3,
+            "name": "Vendor",
+            "status": true,
+            "description": "Vendor has confirmed material availability.",
+            "greenIcon": "/images/orderIcons/greenStepThree.png",
+            "redIcon": "/images/orderIcons/redStepThree.png"
+          },
+          {
+            "step": 4,
+            "name": "Technical Team",
+            "status": true,
+            "description": "The technical team is preparing for the installation.",
+            "greenIcon": "/images/orderIcons/greenStepFour.png",
+            "redIcon": "/images/orderIcons/redStepFour.png"
+          },
+          {
+            "step": 5,
+            "name": "Payment",
+            "status": true,
+            "description": "Payment has been processed successfully.",
+            "greenIcon": "/images/orderIcons/greenStepFive.png",
+            "redIcon": "/images/orderIcons/redStepFive.png"
+          },
+          {
+            "step": 6,
+            "name": "Delivered",
+            "status": true,
+            "description": "Your order has been successfully delivered.",
+            "greenIcon": "/images/orderIcons/greenStepSix.png",
+            "redIcon": "/images/orderIcons/redStepSix.png"
+          }
+        ]
       },
       "labels": {
         "order": ["Order ID", "Order Type", "Quantity", "Weight", "Cost"],
         "shipping": ["Ship To", "Customer Name", "Contact", "Mail ID", "Payment Status"],
-        "history": ["Order History"]
+        "history": {
+          "orderHistory": "Order History",
+          "step": "Step",
+          "name": "Name",
+          "status": "Status",
+          "description": "Description"
+        }
       }
     }
   ]
