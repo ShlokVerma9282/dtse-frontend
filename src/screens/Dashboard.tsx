@@ -1,6 +1,7 @@
 import Billing from "@/components/Billing";
 import Chart from "@/components/Chart";
 import FiberCard from "@/components/FiberCard";
+import FilterPeriod from "@/components/FilterDate";
 import Header from "@/components/Header";
 import Procurement from "@/components/Procurement";
 import VendorPerformance from "@/components/VendorPerformance";
@@ -51,7 +52,9 @@ export default function Dashboard() {
                         <p className="mb-6 font-neo_medium font-medium text-[#AAAAAA] text-lg">Fiber Optics Orders</p>
                     </div>
 
-                    <div><img src="/images/filter.png" alt="" className="w-[250px] h-[65px]" /></div>
+                    <div>
+                        <FilterPeriod />
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {cardData.map((card, index) => (
