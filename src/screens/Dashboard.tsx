@@ -42,13 +42,13 @@ export default function Dashboard() {
     ];
 
     return (
-        <div className="relative h-screen overflow-y-auto font-barlow" >
+        <div className="relative h-screen overflow-y-auto" >
             <div className="relative z-10 bg-[#EEEEEE] p-6 min-h-screen">
                 <Header />
                 <div className="flex flex-row justify-between mt-4">
                     <div>
-                        <h1 className="text-2xl font-semibold mb-4 font-barlow">Dashboard</h1>
-                        <p className="mb-6 font-barlow font-medium text-[#AAAAAA] text-lg">Fiber Optics Orders</p>
+                        <h1 className="text-2xl font-semibold mb-4 font-neo_bold">Dashboard</h1>
+                        <p className="mb-6 font-neo_medium font-medium text-[#AAAAAA] text-lg">Fiber Optics Orders</p>
                     </div>
 
                     <div><img src="/images/filter.png" alt="" className="w-[250px] h-[65px]" /></div>

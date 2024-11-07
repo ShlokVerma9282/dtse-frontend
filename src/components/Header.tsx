@@ -27,8 +27,8 @@ const Header = () => {
           <Cog8ToothIcon className="h-6 w-6 text-[#454545]" />
         </button>
         <div className="border-l-2 border-l-[#D0D6DE] h-8 "></div>
-        <div className="flex items-center space-x-2">
-          <span>Hello, <span className="font-medium">Thomas</span></span>
+        <div className="flex items-center space-x-2 font-neo_medium text-lg">
+          <span>Hello, <span className="font-medium font-neo_bold">Thomas</span></span>
           <img
             src="/images/user-profile.png"
             alt="Profile"

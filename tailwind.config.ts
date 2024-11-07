@@ -15,6 +15,10 @@ const config: Config = {
       },
       fontFamily: {
         barlow: ["Barlow", "sans-serif"],
+        neo_bold: ["neo_bold", "sans-serif"],
+        neo_extrabold: ["neo_extrabold", "sans-serif"],
+        neo_medium: ["neo_medium", "sans-serif"],
+        neo_thin: ["neo_thin", "sans-serif"],
       },
     },
   },
