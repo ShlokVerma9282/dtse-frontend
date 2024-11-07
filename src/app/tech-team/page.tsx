@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const TechTeam = () => {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="flex items-center justify-center min-h-screen bg-gray-100 font-neo_medium">
             <div className="text-center p-8 max-w-md">
                 <Image
                     src="/images/construction.png"
