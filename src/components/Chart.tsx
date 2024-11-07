@@ -23,7 +23,7 @@ const CustomLegend: React.FC<{ data: ChartInfo[] }> = ({ data }) => (
 );
 
 const Chart: React.FC = () => {
-    const [chartData, setChartData] = useState<ChartInfo[]>([]); 
+    const [chartData, setChartData] = useState<ChartInfo[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -51,7 +51,7 @@ const Chart: React.FC = () => {
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="id" />
                         <YAxis />
-                        <Tooltip />
+                        <Tooltip cursor={{ fill: 'transparent' }} />
                         <Bar dataKey="count" barSize={80}>
                             {chartData.map((entry) => (
                                 <Cell key={entry.id} fill={entry.fill} />
