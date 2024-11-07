@@ -33,16 +33,16 @@ export default function Procurement() {
 
   return (
     <div className="py-6 w-full">
-      <h1 className="text-2xl font-bold mb-4">Procurement</h1>
+      <h1 className="text-2xl font-bold mb-4 font-neo_bold text-[#464255]">Procurement</h1>
       <div className="bg-white p-4 rounded-lg shadow-md h-[331px]">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-[19.06px] leading-[26.68px] font-bold mb-4">
-              Procurement
+            <h1 className="text-[19.06px] leading-[26.68px] font-neo_bold mb-4">
+              New Orders
             </h1>
           </div>
           <div>
-            <h1 className="text-[13px] leading-[26.68px] font-bold text-[#B9BBBD] mb-4">
+            <h1 className="text-[13px] leading-[26.68px] font-bold text-[#B9BBBD] mb-4 font-neo_bold">
               Show all
             </h1>
           </div>
@@ -51,13 +51,13 @@ export default function Procurement() {
           <table className="table-fixed">
             <thead>
               <tr className="flex flex-row">
-                <th className="w-[157px] text-left font-bold text-[11.43px] leading-[19.06px] p-4">
+                <th className="w-[157px] text-left font-bold text-[13px] leading-[19.06px] p-4 font-neo_medium">
                   Invoice Name
                 </th>
-                <th className="w-[157px] text-right font-bold text-[11.43px] leading-[19.06px] p-4">
+                <th className="w-[157px] text-right font-bold text-[13px] leading-[19.06px] p-4 font-neo_medium">
                   Date
                 </th>
-                <th className="w-[157px] text-right font-bold text-[11.43px] leading-[19.06px] p-4">
+                <th className="w-[157px] text-right font-bold text-[13px] leading-[19.06px] p-4 font-neo_medium">
                   Amount
                 </th>
                 <th className="w-[110px] text-right font-bold text-[11.43px] leading-[19.06px] p-4"></th>
@@ -72,8 +72,8 @@ export default function Procurement() {
                     </td>
                   </tr>
                   <tr
-                    className="flex w-full h-[53.36px] hover:bg-gray-100 cursor-pointer"
-                    onClick={() => handleViewOrderDetails(data)} // Call function when clicked
+                    className="flex w-full h-[53.36px] hover:bg-gray-100 cursor-pointer font-neo_medium"
+                    onClick={() => handleViewOrderDetails(data)}
                   >
                     <td className="w-[157px] text-left p-4 text-[15.24px] leading-[22.87px]">
                       {data.orderInfo.invoiceName}

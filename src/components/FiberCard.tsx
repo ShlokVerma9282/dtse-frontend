@@ -18,9 +18,9 @@ const FiberCard: React.FC<FiberCardProps> = ({ imageSrc, count, title, arrowType
                 <img src={imageSrc} alt={`${title} Icon`} className="w-8 h-8" />
             </div>
             <div className="ml-4">
-                <h2 className="text-2xl font-bold">{count}</h2>
-                <p className="text-gray-500">{title}</p>
-                <div className="flex items-center space-x-2">
+                <h2 className="text-2xl font-bold font-neo_extrabold">{count}</h2>
+                <p className="text-gray-500 font-neo_medium text-lg">{title}</p>
+                <div className="flex items-center space-x-2 font-neo_medium text-xl">
                     <span
                         className={`${isPositive ? 'bg-[#D9F3EA]' : 'bg-[#FFD9DA]'
                             } rounded-full flex justify-center items-center w-4 h-4`}
@@ -31,7 +31,7 @@ const FiberCard: React.FC<FiberCardProps> = ({ imageSrc, count, title, arrowType
                             <ArrowDownIcon className="h-2 w-2 text-red-800" />
                         )}
                     </span>
-                    <span className="text-sm text-[#A3A3A3]">{percentage}% ({timeFrame})</span>
+                    <span className="text-sm text-[#A3A3A3] font-neo_medium">{percentage}% ({timeFrame})</span>
                 </div>
             </div>
         </div>

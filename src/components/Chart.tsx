@@ -23,7 +23,7 @@ const CustomLegend: React.FC<{ data: ChartInfo[] }> = ({ data }) => (
 );
 
 const Chart: React.FC = () => {
-    const [chartData, setChartData] = useState<ChartInfo[]>([]); 
+    const [chartData, setChartData] = useState<ChartInfo[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -40,7 +40,7 @@ const Chart: React.FC = () => {
     }, []);
 
     return (
-        <div className='bg-white p-4 rounded-lg'>
+        <div className='bg-white p-4 rounded-lg font-neo_medium'>
             <h1 className="text-[19.06px] leading-[26.68px] font-bold mb-4">
                 Technical Overlay
             </h1>
@@ -51,7 +51,7 @@ const Chart: React.FC = () => {
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="id" />
                         <YAxis />
-                        <Tooltip />
+                        <Tooltip cursor={{ fill: 'transparent' }} />
                         <Bar dataKey="count" barSize={80}>
                             {chartData.map((entry) => (
                                 <Cell key={entry.id} fill={entry.fill} />

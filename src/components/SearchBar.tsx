@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 
 const SearchBar = () => {
     return (
-        <div className="relative w-1/2">
+        <div className="relative w-1/2 font-neo_thin">
             <input
                 type="text"
                 placeholder="Search here"

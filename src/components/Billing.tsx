@@ -27,7 +27,7 @@ const Billing: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-7">
+    <div className="flex flex-col gap-7 font-neo_medium">
       {billingData.map((item, index) => (
         <div key={index} className="flex flex-row justify-between bg-white rounded-lg h-[89.82px]">
           <div className="flex flex-col p-4 gap-2">

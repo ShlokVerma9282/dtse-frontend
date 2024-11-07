@@ -11,9 +11,9 @@ const OrderHistory = () => {
   const overallStatus = isDelayed ? "Delayed" : "On Track";
 
   return (
-    <div className="font-barlow">
+    <div className="font-neo_medium">
       <h2 className="text-xl font-bold mb-4 mt-4">
-        Order History -
+        Order History - &nbsp;
         <span className={isDelayed ? "text-red-600" : "text-green-600"}>
           {overallStatus}
         </span>
@@ -47,9 +47,9 @@ const OrderHistory = () => {
         ))}
       </div>
 
-      <div className="flex flex-row ml-[47px] justify-center mt-4 absolute">
+      <div className="flex flex-row ml-[47px] justify-center mt-4 absolute text-[#646464]">
         {steps.map((data, index) => (
-          <div className="w-[140px] justify-center items-center flex text-[14px] font-semibold" key={index}>
+          <div className="w-[140px] justify-center items-center flex text-[17px] font-semibold" key={index}>
             {data.name}
           </div>
         ))}
