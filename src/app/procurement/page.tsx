@@ -6,11 +6,11 @@ const Procurement = () => {
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
             <div className="text-center p-8 max-w-md">
                 <Image
-                    src="/images/2.png"
+                    src="/images/construction.png"
                     alt="Under Construction"
-                    width={128}
-                    height={128}
-                    className="mx-auto mb-4 w-full h-full"
+                    width={528}
+                    height={528}
+                    className="mx-auto mb-4"
                 />
                 <h1 className="text-4xl font-bold text-gray-800 mb-4">Website is Under Construction</h1>
                 <p className="text-gray-600 mb-6">
