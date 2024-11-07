@@ -78,11 +78,11 @@ export default function Dashboard() {
                         <VendorPerformance />
                     </div>
                     <div className="relative z-10">
-                        <h1 className="text-2xl font-bold mb-4">Billing and Invoices</h1>
+                        <h1 className="text-2xl font-bold mb-4 font-neo_bold text-[#464255]">Billing and Invoices</h1>
                         <Billing />
                     </div>
                     <div className="relative z-10">
-                        <h1 className="text-2xl font-bold mb-4">Technical Team</h1>
+                        <h1 className="text-2xl font-bold mb-4 font-neo_bold text-[#464255]">Technical Team</h1>
                         <Chart />
                     </div>
                 </div>

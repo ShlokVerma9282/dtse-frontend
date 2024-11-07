@@ -40,7 +40,7 @@ const Chart: React.FC = () => {
     }, []);
 
     return (
-        <div className='bg-white p-4 rounded-lg'>
+        <div className='bg-white p-4 rounded-lg font-neo_medium'>
             <h1 className="text-[19.06px] leading-[26.68px] font-bold mb-4">
                 Technical Overlay
             </h1>

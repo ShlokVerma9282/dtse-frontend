@@ -41,22 +41,22 @@ export default function VendorPerformance() {
     <div className="py-6 w-full">
       <div className="bg-white p-4 rounded-lg shadow-md h-[331px] mt-12">
         <div className="flex justify-between items-center">
-          <h1 className="text-[19.06px] leading-[26.68px] font-bold mb-4">
+          <h1 className="text-xl leading-[26.68px] font-bold mb-4 font-neo_extrabold text-[#464255]">
             Vendor Performance
           </h1>
           <img src="/images/icons/ThreeDots.png" alt="Options" />
         </div>
-        <div>
+        <div className='font-neo_medium text-lg'>
           <table className="table-fixed w-full">
             <thead>
               <tr className="flex flex-row">
-                <th className="w-[217.24px] flex justify-start font-bold text-[11.43px] leading-[19.06px] p-4">
+                <th className="w-[217.24px] flex justify-start font-bold text-[13px] leading-[19.06px] p-4">
                   Name
                 </th>
-                <th className="w-[217.24px] flex justify-center font-bold text-[11.43px] leading-[19.06px] p-4">
+                <th className="w-[217.24px] flex justify-center font-bold text-[13px] leading-[19.06px] p-4">
                   City
                 </th>
-                <th className="w-[217.24px] flex justify-end font-bold text-[11.43px] leading-[19.06px] p-4">
+                <th className="w-[217.24px] flex justify-end font-bold text-[13px] leading-[19.06px] p-4">
                   Rating
                 </th>
               </tr>

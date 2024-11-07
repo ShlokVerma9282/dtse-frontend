@@ -43,17 +43,17 @@ const OrderDetails = () => {
             className={`fixed h-screen inset-0 bg-gray-500 bg-opacity-50 backdrop-blur-sm z-50 flex justify-center items-center ${orderDetailsVisible ? "block" : "hidden"
                 }`}
         >
-            <div className="bg-white rounded-lg w-[960px] h-[600px] p-6 shadow-lg relative">
+            <div className="bg-[#EEEEEE] rounded-lg w-[960px] h-[600px] p-6 shadow-lg relative">
                 <button
                     onClick={handleCloseOrderDetails}
-                    className="absolute top-2 right-2 text-gray-500 hover:text-red-500"
+                    className="absolute top-2 p-2 right-2 text-gray-500 hover:text-red-500"
                     aria-label="Close"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <div className="font-barlow">
+                <div className="font-neo_medium">
                     <div className="mb-8 flex justify-between">
                         <SearchBar />
                     </div>
@@ -65,36 +65,36 @@ const OrderDetails = () => {
                                     {labels.order[0]} - <span className="font-semibold text-gray-600">{orderInfo.invoiceName}</span>
                                 </p>
                                 <p className="text-sm text-gray-500 mb-8">{orderInfo.date}</p>
-                                <p><strong>{labels.order[1]}</strong></p>
-                                <p><strong>{labels.order[2]}</strong></p>
-                                <p><strong>{labels.order[3]}</strong></p>
-                                <p><strong>{labels.order[4]}</strong></p>
+                                <p className='text-lg text-[#464255]'>{labels.order[1]}</p>
+                                <p className='text-lg text-[#464255]'>{labels.order[2]}</p>
+                                <p className='text-lg text-[#464255]'>{labels.order[3]}</p>
+                                <p className='text-lg text-[#464255]'>{labels.order[4]}</p>
                             </div>
                             <div>
                                 <div className="h-8"></div>
                                 <div className="h-8 mb-4"></div>
-                                <p className='text-[#909090]'>{orderInfo.orderType}</p>
-                                <p className='text-[#909090]'>{orderInfo.quantity}</p>
-                                <p className='text-[#909090]'>{orderInfo.weight}</p>
-                                <p className='text-[#909090]'>{orderInfo.cost}</p>
+                                <p className='text-[#909090] text-lg'>{orderInfo.orderType}</p>
+                                <p className='text-[#909090] text-lg'>{orderInfo.quantity}</p>
+                                <p className='text-[#909090] text-lg'>{orderInfo.weight}</p>
+                                <p className='text-[#909090] text-lg'>{orderInfo.cost}</p>
                             </div>
                             <div>
-                                <p><strong className='ml-[2.5rem]'>{labels.shipping[0]}</strong></p>
+                                <p className='ml-[2.5rem] text-lg text-[#464255]'>{labels.shipping[0]}</p>
                                 <div className="h-8 mb-8"></div>
                                 <div className="border-l-2 border-gray-400 pl-10">
-                                    <p><strong>{labels.shipping[1]}</strong></p>
-                                    <p><strong>{labels.shipping[2]}</strong></p>
-                                    <p><strong>{labels.shipping[3]}</strong></p>
-                                    <p><strong>{labels.shipping[4]}</strong></p>
+                                    <p className='text-lg text-[#464255]'>{labels.shipping[1]}</p>
+                                    <p className='text-lg text-[#464255]'>{labels.shipping[2]}</p>
+                                    <p className='text-lg text-[#464255]'>{labels.shipping[3]}</p>
+                                    <p className='text-lg text-[#464255]'>{labels.shipping[4]}</p>
                                 </div>
                             </div>
                             <div>
-                                <p className="text-gray-600">{shippingInfo.address}</p>
-                                <p className="text-sm text-gray-500 mb-4">{shippingInfo.deliveryDate}</p>
-                                <p className='text-[#909090]'>{shippingInfo.customerName}</p>
-                                <p className='text-[#909090]'>{shippingInfo.contact}</p>
-                                <p className='text-[#909090]'>{shippingInfo.mailId}</p>
-                                <p className={`font-bold ${shippingInfo.paymentStatusColor === 'green' ? 'text-green-500' : 'text-orange-500'}`}>
+                                <p className="text-[#909090]">{shippingInfo.address}</p>
+                                <p className="text-lg text-gray-500 mb-[0.9rem]">{shippingInfo.deliveryDate}</p>
+                                <p className='text-lg text-[#909090]'>{shippingInfo.customerName}</p>
+                                <p className='text-lg text-[#909090]'>{shippingInfo.contact}</p>
+                                <p className='text-lg text-[#909090]'>{shippingInfo.mailId}</p>
+                                <p className={`font-bold mt-[0.3rem] ${shippingInfo.paymentStatusColor === 'green' ? 'text-green-500' : 'text-orange-500'}`}>
                                     {shippingInfo.paymentStatus}
                                 </p>
                             </div>
